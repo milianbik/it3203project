@@ -1,0 +1,101 @@
+/*MAKE STICKY MENU?*/
+.menu {                                             /* Styles the navigation menu */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f7e6ff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly; /* Centers the menu items */
+}
+.menu li {                                      /* Styles each list item */
+    display: inline-flex;                            /* Displays list items horizontally */
+    padding: 0 15px;        /* Adds horizontal spacing between items */
+    
+}
+.menu li a {                                    /* Styles the links */
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.menu li a:hover:not(.active){                              /* Styles the links on hover */
+    background-color: #efccff;
+    color: black;
+}
+.menu li a.active {                           /* Styles the active link */
+    background-color: violet;
+}
+
+
+
+.container{                 /* Styles the main container by Flexbox */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Full viewport height = based on device */
+}
+
+
+h1, h2 {                            /* Styles the main headings */          
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    /*text-decoration: underline;*/
+}
+
+p {                                 /* Styles the paragraphs */
+    font-family: 'Trebuchet MS', sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    text-align: justify;
+
+
+}
+
+table, th, td {                                  /* Styles the table, table headers, and table data cells */
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+    margin-left: 80px;
+    
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+ul, ol {                                 /* Styles unordered lists */
+    margin: 20px;
+    padding-left: 40px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+a:hover {                               /* Styles links on hover */
+    color: purple;
+    text-decoration: underline;
+}
+/*Add changed color for accessed link*/
+
+
+.logo { 
+    width: 90px;
+    height: auto;
+    margin-top: 30px;
+}
+
+
+
+.citations {                       /* Styles the citations list with hanging indent */
+    list-style-type: none;
+}
+.citations li { 
+    text-indent: -50px;
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+
+
+
+#footer {                               /* Styles the footer */
+    text-align: center;
+    padding: 15px;
+    background-color: honeydew;
+    margin-top: 100px;
+}
