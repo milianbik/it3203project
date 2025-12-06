@@ -73,6 +73,12 @@ a:hover {                               /* Styles links on hover */
 /*Add changed color for accessed link*/
 
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 .logo { 
     width: 90px;
     height: auto;
@@ -98,3 +104,7 @@ a:hover {                               /* Styles links on hover */
     padding: 10px;
     background-color: honeydew;
 }
+
+
+
+/* media queries for responsiveness  = w/ @media*/
