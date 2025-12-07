@@ -1,15 +1,16 @@
 /*MAKE STICKY MENU?*/
 .menu {                                             /* Styles the navigation menu */
     list-style-type: none;
+    border: 2px black;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     background-color: #f7e6ff;
     overflow: hidden;
     display: flex;
     justify-content: space-evenly; /* Centers the menu items */
 }
 .menu li {                                      /* Styles each list item */
-    display: inline-flex;                            /* Displays list items horizontally */
+    display: flex;                         
     padding: 0 15px;        /* Adds horizontal spacing between items */
     
 }
@@ -21,9 +22,11 @@
 .menu li a:hover:not(.active){                              /* Styles the links on hover */
     background-color: #efccff;
     color: black;
+    padding: 5px;
 }
 .menu li a.active {                           /* Styles the active link */
     background-color: violet;
+    margin: 0px  10px 10px;
 }
 
 
@@ -66,13 +69,27 @@ ul, ol {                                 /* Styles unordered lists */
     font-family: 'Trebuchet MS', sans-serif;
 }
 
+a {
+    color: black;
+
+}
 a:hover {                               /* Styles links on hover */
-    color: purple;
+    color: red;
+     
     text-decoration: underline;
+}
+a:visited {
+    color: green; 
+    
 }
 /*Add changed color for accessed link*/
 
-
+@media (max-width: 600px){
+    table{
+        background-color: red;
+    }
+     
+}
 img {
     max-width: 100%;
     height: auto;
@@ -83,6 +100,11 @@ img {
     width: 90px;
     height: auto;
     margin-top: 30px;
+}
+
+.toc {
+    width: 100%;
+    /*list-style: none; */
 }
 
 
