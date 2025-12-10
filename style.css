@@ -1,34 +1,3 @@
-/*MAKE STICKY MENU?*/
-.menu {                                             /* Styles the navigation menu */
-    list-style-type: none;
-    border: 2px black;
-    margin: 0;
-    padding: 20px;
-    background-color: #f7e6ff;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-evenly; /* Centers the menu items */
-}
-.menu li {                                      /* Styles each list item */
-    display: flex;                         
-    padding: 0 15px;        /* Adds horizontal spacing between items */
-    
-}
-.menu li a {                                    /* Styles the links */
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-}
-.menu li a:hover:not(.active){                              /* Styles the links on hover */
-    background-color: #efccff;
-    color: black;
-    padding: 5px;
-}
-.menu li a.active {                           /* Styles the active link */
-    background-color: violet;
-    margin: 0px  10px 10px;
-}
-
 
 
 .container{                 /* Styles the main container by Flexbox */
@@ -55,9 +24,9 @@ p {                                 /* Styles the paragraphs */
 }
 
 table, th, td {                                  /* Styles the table, table headers, and table data cells */
-    border: 2px solid black;
+    border: 2px black; 
     border-collapse: collapse;
-    padding: 20px;
+    padding: 25px;
     
     text-align: center;
     font-family: 'Trebuchet MS', sans-serif;
@@ -84,12 +53,9 @@ a:visited {
 }
 /*Add changed color for accessed link*/
 
-@media (max-width: 600px){
-    table{
-        background-color: red;
-    }
+
      
-}
+
 img {
     max-width: 100%;
     height: auto;
@@ -100,11 +66,6 @@ img {
     width: 90px;
     height: auto;
     margin-top: 30px;
-}
-
-.toc {
-    width: 100%;
-    /*list-style: none; */
 }
 
 
@@ -121,12 +82,112 @@ img {
 
 
 #footer {                               /* Styles the footer */
+   position: relative;
+    bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 10px;
     background-color: honeydew;
 }
 
 
 
-/* media queries for responsiveness  = w/ @media*/
+
+
+.menu {                                             /* Styles the navigation menu */
+    list-style-type: none;
+    border: 2px black;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7e6ff;
+    display: inline-block;
+
+}
+.menu li {                                      /* Styles each list item */
+    display: inline-block;                         
+    padding: 5px;        /* Adds horizontal spacing between items */
+}
+
+.menu li a {                                    /* Styles the links */
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.menu li a:hover:not(.active){                              /* Styles the links on hover */
+    background-color: #efccff;
+    color: black;
+    padding: 5px;
+}
+.menu li a.active {                           /* Styles the active link */
+    background-color: violet;
+    margin: 0px  10px 10px;
+}
+
+@media (max-width: 600px){
+    
+    /* FOR MENU*/
+    .dropbtn{
+        background-color: #f7e6ff;
+        border: none;
+        display: block;
+    }
+    #dropdown-content{
+        display: none;
+    }
+    #menu-nav{
+        position: relative;
+        
+
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+   .menu a{
+    display: none;
+   }
+   
+   /* FOR BODY TEXT*/
+}
+
+
+@media (min-width: 601px) {
+    
+    /* FOR MENU*/
+    .dropbtn{
+        display: none;
+    }
+    
+    .menu li a {
+        font-size: 15px;
+
+    }
+
+}
+
+@media (min-width: 992px){
+
+    /* FOR BODY TEXT*/
+    .grid-container{
+        display: grid;
+        grid-template-columns: 30% 70%
+    }
+    .left {
+        background-color: lightcyan; 
+
+    }
+    .right{
+        
+    }
+}
+
+#toc {
+    width: 100%;
+    /*list-style: none; */
+}
+#toc a:hover {
+    color: coral;
+}
+#toc a:visited {
+    color: black;
+}

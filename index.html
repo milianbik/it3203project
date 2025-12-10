@@ -9,14 +9,19 @@
 
 
 <header>
-    <nav>                               <!--the menu bar CHANGE TITLES FOR TOPICS-->
+    <nav>                              
         <ul class ="menu">
-            <li><a class = "active" href="index.html">Home</a></li>
-            <li><a href="topic1.html">Topic 1</a></li>
-            <li><a href="topic2.html">Topic 2</a></li>
-            <li><a href="concepts.html">Key Concepts</a></li>
-            <li><a href="about.html">About the Author</a></li>
-            <li><a href="references.html">References</a></li>
+            <button class="dropbtn" id = "dropdown-button"> <img id = "menu-nav" src = "menu-arrow.png"></button>
+
+            <div id = "dropdown-content">
+                <li><a class = "active" href="index.html">Home</a></li>
+                <li><a href="topic1.html">Topic 1</a></li>
+                <li><a href="topic2.html">Topic 2</a></li>
+                <li><a href="concepts.html"> Concepts</a></li>
+                <li><a href="quiz.html">Test Your Knowledge</a></li>
+                <li><a href="about.html">Meet the Author</a></li>
+                <li><a href="references.html">References</a></li>
+            </div>
         </ul>
     </nav>
 </header>
@@ -24,20 +29,31 @@
 
 <body class = "container">
     <h1>Introduction to Browsers</h1>
-    <h2>Abstract</h2>
-    <p>This is a simple HTML page for the IT 3203 project. The introductory paragraph for my research will go here.</p> <!-- write more content!-->
-    
-    <!-- Table of Contents (add quicklinks for easy access!)-->
-    
-    <ol class = "toc">
-        <b>Table of Contents</b>
-        <li><a href="topic1.html"> Topic 1 </a></li>
-        <li><a href="topic2.html">Topic 2</a></li>
-        <li><a href="concepts.html">Key Concepts</a></li>
-        <li><a href="about.html">About the Author</a></li>
-        <li><a href="references.html">References</a></li>
-    </ol>
-    
+
+    <div class = "grid-container">
+        <div class = "left">
+            <ol id = "toc">
+                <b>Table of Contents</b>
+                <li><a href="topic1.html"> Topic 1 </a></li>
+                <li><a href="topic2.html">Topic 2</a></li>
+                <li><a href="concepts.html">Key Concepts</a></li>
+                <li><a href="quiz.html">Test Your Knowledge</a></li>
+                <li><a href="about.html">About the Author</a></li>
+                <li><a href="references.html">References</a></li>
+            </ol>
+        </div>
+        <div class = "right">
+            <h2>Abstract</h2>
+            <p>This is a simple HTML page for the IT 3203 project. The introductory paragraph for my research will go here.</p> <!-- write more content!-->
+            <p> In 1990, Tim Berners-Lee developed the WorldWideWeb and it served as the first interactive “browser”. It allowed users to interact with the web servers efficiently while searching for information on the
+                 Internet. Web browsers play a pivotal role in the way people interact online, whether it is researching new topics or communicating with others. Regardless of how they are used, browsers must be simple, 
+                 functional, and private in order for users to effectively use them.</p>
+        </div>
+        
+    </div>
+
+
+
 
 </body>
 

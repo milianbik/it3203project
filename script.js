@@ -1,5 +1,18 @@
-//document.getElementById("dropdown-btn").addEventListener(click);
+let btn = document.getElementById("dropdown-button");
+let content = document.getElementByID("dropdown-content");
 
+function openMenu() {
+    if (content.style.display === "block") {
+    content.style.display = "none"; 
+  } else {
+    content.style.display = "block";
+  }
+
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  btn.addEventListener("click", openMenu);
+});
 
 
 
@@ -54,12 +67,8 @@ const questions = [
         }
         
     ]
-    function name(){
-        blah
-    }
-
-    function name2(){
-        blah
+    function checkAnswer(){
+        
     }
 
 
